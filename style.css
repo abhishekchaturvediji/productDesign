@@ -8,6 +8,7 @@
 
 body{
     overflow: hidden;
+    transform:scale(1.25);
 }
 
 html,body,.back{
