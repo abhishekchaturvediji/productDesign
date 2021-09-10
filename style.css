@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+}
+
+body{
+    overflow: hidden;
+}
+
+html,body,.back{
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    height: 70px;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.623);
+    font-size: 13px;
+    padding: 10px 20px;
+    box-shadow: 1px 0px 10px -5px rgb(53, 53, 53);
+    color: rgba(0, 0, 0, 0.400);
+}
+
+header>h3{
+    font-size: 16px;
+    color: #000;
+}
+
+header>h3>span{
+    opacity: .4;
+}
+
+header>h4 , header>i, header> div >input[type="search"]{
+    font-size: 10px;
+}
+
+.hinput{
+    position: relative;
+}
+.hinput input{
+    width: 300px;
+    padding: 8px 20px;
+    border-radius: 100px;
+    background-color: #ececec;
+    border: none;
+    outline: none;
+}
+
+.hinput i{
+    position: absolute;
+    right: 10px;
+
+}
+
+.w{
+    height: 40px;
+}
+
+header .b{
+    font-size: 18px;
+    width: 80px;
+    height: 100%;
+    border-left:1px solid rgba(230, 230, 230, 0.699) ;
+    border-right:1px solid rgba(230, 230, 230, 0.699) ;
+    justify-content: center;
+
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-image: url("https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    padding: 5px 20px;
+    height: 40px;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.623);
+    font-size: 13px;   
+}
+
+#selected{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-bottom: 2px solid rgba(235, 52, 52, 0.87);
+}
+
+.links > h4{
+    font-weight: 600;
+    margin-right: 60px;
+}
+
+.flinks{
+    opacity: .4;
+}
+
+main{
+    padding: 20 20px;
+}
+
+main .right{
+    width: 45%;
+}
+
+.left{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+main .left{    
+    width: 55%;
+    justify-content: center;
+}
+
+
+.left .one{
+    margin-top: -30px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 1px solid rgb(112, 161, 207);
+    justify-content: center;
+    /* animation: sclable 2s cubic-bezier(0.19, 1, 0.22, 1) infinite both; */
+}
+/* 
+@keyframes sclable{
+    0%{
+        width: 20px;
+        height: 20px;
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
+
+
+.left .two{
+    margin-top: -30px;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 1px solid rgb(194, 194, 194);
+    justify-content: center;
+}
+
+.left .three{
+    margin-top: -30px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid rgb(112, 161, 207);
+}
+
+.left img{
+    margin-top: -30px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.right{
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.right h2{
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.right >h2 span{
+    text-transform: capitalize;
+    color: rgb(86, 169, 224);
+}
+
+.right > p{
+    margin-top: 20px;
+    color: rgb(86, 169, 224);
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.lor{
+    font-size: 14px;
+    margin-top: 40px;
+    width: 100%;
+    font-weight: 600;
+    justify-content: space-between;
+    color: rgb(163, 163, 163);
+}
+
+.lor h6{
+    font-size: 14px;
+}
+
+.lol{
+    margin-top: 45px;
+    justify-content: space-between;
+}
+
+.lol button{
+    padding: 10px 40px;
+    border-radius: 100px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to left, #c22fa2, #da2fa7, #dd37ab, #e2548a, #e724a6);
+    box-shadow:  2px 2px 20px -1px #e724a6;
+    /* color: #d441c8; */
+}
+
+.lol .p{
+    line-height: 15px;
+    width: 40%;
+    font-size: 10px;
+    color: #e724a6;
+}
+
+.top{
+    position: absolute;
+    width: 60%;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.card{
+    border-radius: 10px;
+    position: relative;
+    width: 150px;
+    height: 100px;
+   
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 2px 4px -1px #000;
+}
+
+.holder{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    backdrop-filter: blur(7px);
+}
+
+.holder img{
+    width: 100px;
+    margin-top: -50px;
+}
+
+#Smmenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.menu{
+    display: none;
+}
+
+#raviTeja{
+    font-size: 50px;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+}
+
+.d{
+    display: none;
+}
+
+#fSearch{
+    display: none;
+}
+
+@media(max-width:450px){
+
+    .menu{
+        font-weight: 900;
+        font-size: 17px;
+        color: #000;
+        display: initial;
+    }
+
+    nav, .links{
+        flex-direction: column;
+    }
+    .links h4{
+        margin-bottom: 20px;
+    }
+
+    html,body,.back{
+        min-height: 100vh;
+    }
+
+    .d, .nav, .hinput , .w{
+        display: none;
+    }
+    body{
+        overflow: auto;
+    }
+
+    .back{
+        font-size-adjust: 0.2px;          
+    }
+
+    header{
+        height: 50px;
+        padding: 5px 10px;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    main .right, main .left{
+        width: 100%;
+    }
+
+    .right{
+        padding: 10px 10px;
+        margin-bottom: 20px;
+    }
+
+    .left > .one ,.two, .three{
+        margin-top: 0;
+    }
+
+    .right h2 {
+        line-height: 30px;
+        font-size: 30px;
+    }
+
+    .lol button{
+        padding: 8px 15px;
+    }
+
+    main .left{
+        margin-top: 10px;
+    }
+
+    .left img{
+        margin-top: 0;
+        width: 200px;
+    }
+
+
+   .left .one{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 350px;
+       width: 350px;
+   }
+
+   .left .two{
+       justify-content: center;
+       margin-top: 0px;
+       height: 280px;
+       width: 280px;
+   }
+
+   .left .three{
+    justify-content: center;
+    margin-top: 0px;
+    height: 200px;
+    width: 200px;
+   }
+
+   
+   .top{
+        position: fixed;
+        bottom: -50px;
+        width: 100%;
+    }
+
+    .top  .card{
+        width: 100px;
+    }
+
+    .top .card .holder>img{
+        width: 70px;
+    }
+    
+
+    #fSearch{
+        margin-top: 20px;
+        display: grid;
+        position: relative;
+        place-items: center;
+    }
+    .b{
+        display: initial;
+    }
+
+    .b >i{
+        position: absolute;
+        top: 6px;
+    }
+
+}
